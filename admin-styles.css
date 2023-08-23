@@ -1,0 +1,16 @@
+/* Dashboard Notice Styling */
+.notice.custom-signals-notice {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-left: 4px solid #0073aa;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Shortcode Preview Styling */
+.custom-signals-preview {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}

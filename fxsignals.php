@@ -80,25 +80,21 @@ add_action('admin_menu', 'fxsignals_admin_page');
 
 function fxsignals_admin_content() {
     ?>
-    <div class="wrap">
+    <div class="wrap custom-signals-admin-page">
         <h1>Add New Signal</h1>
         <form method="post" action="">
             <label for="symbol">Symbol:</label>
             <input type="text" name="symbol" id="symbol" required>
-            <br>
- 
+
             <label for="take_profit">Take Profit:</label>
             <input type="text" name="take_profit" id="take_profit" required>
-            <br>
- 
+
             <label for="stop_loss">Stop Loss:</label>
             <input type="text" name="stop_loss" id="stop_loss" required>
-            <br>
- 
+
             <label for="entry_price">Entry Price:</label>
             <input type="text" name="entry_price" id="entry_price" required>
-            <br>
- 
+
             <input type="submit" name="add_signal" value="Add Signal">
         </form>
     </div>
@@ -143,3 +139,33 @@ function fxsignals_save_signal() {
     }
 }
 add_action('admin_init', 'fxsignals_save_signal');
+
+function fxsignals_admin_notice() {
+    ?>
+    <div class="notice notice-info custom-signals-notice is-dismissible">
+        <p><strong>FxSignals Plugin Instructions:</strong> To display signals on a page, use the following shortcode: [fxsignals]</p>
+        <hr>
+        <p><strong>Signals Preview:</strong></p>
+        <div class="custom-signals-preview">
+            <?php
+            // Display the shortcode output
+            // echo do_shortcode('[fxsignals]');
+            ?>
+        </div>
+    </div>
+    <?php
+}
+add_action('admin_notices', 'fxsignals_admin_notice');
+
+function fxsignals_admin_styles() {
+    // Enqueue custom styles for the admin area
+    wp_enqueue_style('fxsignals-admin-styles', plugin_dir_url(__FILE__) . 'admin-styles.css');
+}
+add_action('admin_enqueue_scripts', 'fxsignals_admin_styles');
+
+function fxsignals_admin_content_styles() {
+    // Enqueue custom styles for the admin content
+    wp_enqueue_style('fxsignals-admin-content-styles', plugin_dir_url(__FILE__) . 'admin-content-styles.css');
+}
+add_action('admin_enqueue_scripts', 'fxsignals_admin_content_styles');
+

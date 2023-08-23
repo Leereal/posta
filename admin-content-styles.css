@@ -1,0 +1,35 @@
+/* Example styling for admin content */
+.custom-signals-admin-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-signals-admin-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.custom-signals-admin-page form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.custom-signals-admin-page form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.custom-signals-admin-page form input[type="submit"] {
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}

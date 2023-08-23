@@ -33,6 +33,7 @@ function display_signals_loop() {
     $signals = new WP_Query($args);
 
     if ($signals->have_posts()) {
+        echo '<div class="custom-signals-loop">'; // Add a wrapper div
         while ($signals->have_posts()) {
             $signals->the_post();
 
@@ -43,7 +44,7 @@ function display_signals_loop() {
             // Add more fields as needed
 
             // Display the signal information
-            echo '<div class="signal">';
+            echo '<div class="signal-item">'; // Add a class to each signal item
             echo '<h2>' . get_the_title() . '</h2>';
             echo '<p><strong>Symbol:</strong> ' . $symbol . '</p>';
             echo '<p><strong>Take Profit:</strong> ' . $take_profit . '</p>';
@@ -52,9 +53,11 @@ function display_signals_loop() {
             // Display more fields
             echo '</div>';
         }
+        echo '</div>'; // Close the wrapper div
         wp_reset_postdata();
     }
 }
+
 
 // Shortcode Integration
 function fxsignals_shortcode() {
@@ -168,4 +171,11 @@ function fxsignals_admin_content_styles() {
     wp_enqueue_style('fxsignals-admin-content-styles', plugin_dir_url(__FILE__) . 'admin-content-styles.css');
 }
 add_action('admin_enqueue_scripts', 'fxsignals_admin_content_styles');
+
+function fxsignals_frontend_styles() {
+    // Enqueue custom styles for the frontend
+    wp_enqueue_style('fxsignals-frontend-styles', plugin_dir_url(__FILE__) . 'frontend-styles.css');
+}
+add_action('wp_enqueue_scripts', 'fxsignals_frontend_styles');
+
 

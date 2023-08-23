@@ -1,0 +1,25 @@
+/* Styling for the frontend signals loop */
+.custom-signals-loop {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.custom-signals-loop h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.custom-signals-loop .signal-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.custom-signals-loop .signal-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Add more custom styles as needed */

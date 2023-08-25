@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./test */ \"./src/test.js\");\n\r\n\r\n(0,_test__WEBPACK_IMPORTED_MODULE_1__.test)();\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./test */ \"./src/test.js\");\n\n\n(0,_test__WEBPACK_IMPORTED_MODULE_1__.test)();\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mai
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   test: () => (/* binding */ test)\n/* harmony export */ });\nconst test = () => {\r\n  console.log(\"Hello again 23t4\");\r\n};\r\n\n\n//# sourceURL=webpack:///./src/test.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   test: () => (/* binding */ test)\n/* harmony export */ });\nconst test = () => {\n  console.log(\"Hello again 23t4\");\n};\n\n\n//# sourceURL=webpack:///./src/test.js?");
 
 /***/ }),
 

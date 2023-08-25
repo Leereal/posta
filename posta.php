@@ -224,7 +224,7 @@ function display_signals_loop() {
                     $take_profit_3 = get_post_meta(get_the_ID(), 'take_profit_3', true);
                     $take_profit_4 = get_post_meta(get_the_ID(), 'take_profit_4', true);
                     $status = ucfirst(strtolower(get_post_meta(get_the_ID(), 'status', true)));
-                    $image_url = 'http://localhost/mychargeback/wp-content/uploads/2023/08/7xm.xyz_483993-scaled.jpg';//get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); // Get the featured image URL
+                    $image_url = 'https://scapemark.com/wp-content/uploads/2023/08/logo.png';//get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); // Get the featured image URL
                     $post_time = human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; // Get human-readable post time
             ?>
                 <div class="col-md-4 gy-5">

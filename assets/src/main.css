@@ -1,0 +1,38 @@
+.bg-main{
+   background:#193366;
+}
+.bg-second{
+    background: #00AA55;
+}
+.bg-accent{
+    background:#FFCC00;
+}
+.text-main{
+    color:#193366;
+ }
+ .text-second{
+    color: #00AA55;
+ }
+ .text-accent{
+    color:#FFCC00;
+ }
+.entry-price{
+    display: flex;
+    flex-direction: column;
+}
+.entry-price .price{
+    font-size: 70%;
+}
+.card-footer{
+    font-size: 70%;
+}
+.featured-image img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 50%;    
+} 
+.stop-loss, .take-profit-1, .take-profit-2, .take-profit-3, .take-profit-4 {
+    display: flex;
+    flex-direction: column;   
+}
